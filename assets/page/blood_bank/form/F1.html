@@ -1,0 +1,84 @@
+<head>
+<script>
+function fun()
+{
+	window.alert("Thank For Registration!!!");
+}
+</script>
+</head>
+<body style="background-color:#ff4d4d" >
+	<h1>
+		<center>
+			<b style="color:white;">
+				New Donor
+			</b>
+		</center>
+	</h1>
+	<form method="post" action="../data.php">
+			<table>
+					<tr><td><p><h3><b>Name:</b></h3></p></td><td><input type="text" name="Name" required></td></tr>
+					<tr><td><p><h3><b>Blood Group:</b></h3></p>
+						</td>
+							<td>
+									<select name="BloodGroup" required>
+										<option value="select">select</option>
+										<option value="A+">A+</option>
+										<option value="A-">A-</option>
+										<option value="A1+">A1+</option>
+										<option value="A1-">A1-</option>
+										<option value="A1B+">A1B+</option>
+										<option value="A1B-">A1B-</option>
+										<option value="A2+">A2+</option>
+										<option value="A2-">A2-</option>
+										<option value="A2B+">A2B+</option>
+										<option value="A2B-">A2B-</option>
+										<option value="AB+">AB+</option>
+										<option value="AB-">AB-</option>
+										<option value="B+">B+</option>
+										<option value="O+">O+</option>
+										<option value="O-">O-</option>
+									</select>
+							</td>
+					</tr>
+					<tr><td><p><h3><b>Gender:</b></h3></p></td>
+							<td>
+								<select name="MyMenu" required>
+									<option value="select">select</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+									<option value="Others">Others</option>
+								</select>
+							</td>
+					</tr>
+					<tr><td><p><h3><b>Date of Birth:</b></h3></p></td><td><input type="date" name="DateofBirth" required></td></tr>
+					<tr><td><p><h3><b>Mobile Number:</b></h3></p></td><td><input type="int" name="MobileNumber" required></td></tr>
+					<tr><td><p><h3><b>District:</b></h3></p></td><td><input type="text" name="District" required></td></tr>	
+					<tr><td><p><h3><b>City:</b></h3></p></td><td><input type="text" name="City" required></td></tr>	
+					<tr><td><p><h3><b>Email-id:</b></h3></p></td><td><input type="email" name="Email" required></td></tr>	
+					<tr>
+						<td><p><h3><b>Permanent Address:</b></h3></p></td>
+						<td style="width:327px"><textarea name="txtPermanentAddress" rows="2" cols="20" style="height:76px;width:160px;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td><p><h3><b>Your Availability:</b></h3></p></td>
+						<td>
+							<select name="MyMenu1" required>
+								<option value="Available">Available</option>
+								<option value="Unavailable">Unavailable</option>
+							</select>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td>
+							<input type="checkbox" name="auth" value="available" id="available" >I authorise the website to display my name and telephone number,so that the needy culd 	contact me,as and when there is an emergency
+						</td>
+					</tr> -->	
+			</table>
+			<center>
+				<input type="submit" value="Submit" onclick="fun()">
+			</center>
+	</form>
+</body>
+</html>
+<head>
